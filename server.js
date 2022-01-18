@@ -15,13 +15,13 @@ app.use(requireHTTPS);
 /**
  * used to serve our static file
  */
-app.use(express.static('./dist/chavatodo'));
+app.use(express.static('./dist/todo-app'));
  
 /**
  * used to redirect paths to index.html file in dist folder
  */
 app.get('/*', function(req, res) {
-    res.sendFile('index.html', {root: 'dist/chavatodo/'}
+    res.sendFile('index.html', {root: 'dist/todo-app/'}
   );
   });
 /**
