@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-app.use(express.static(__dirname + '/dist/<chavatodo>'));
+app.use(express.static(__dirname + '/dist/<todo-app>'));
 app.get('/*', function(req,res) {
 res.sendFile(path.join(__dirname+
-'/dist/<chavatodo>/index.html'));});
+'/dist/<todo-app>/index.html'));});
 app.listen(process.env.PORT || 8080);
